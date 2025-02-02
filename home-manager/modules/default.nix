@@ -5,5 +5,6 @@
     ./git.nix
     ./mako.nix
     ./udiskie.nix
+    ./spicetify.nix
   ];
 }

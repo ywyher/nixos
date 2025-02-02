@@ -29,7 +29,9 @@
         btop
         vlc
         mpv
+        ncmpcpp
     	lollypop
+        spotify
 
         polkit
         hyprpolkitagent
