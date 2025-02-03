@@ -18,6 +18,9 @@
 	in {
 		nixosConfigurations.${user} = nixpkgs.lib.nixosSystem {
 			inherit system;
+			specialArgs = {
+        inherit inputs;
+      };
 			modules = [ ./configuration.nix ];
 		};
 		
@@ -26,7 +29,10 @@
 			extraSpecialArgs = {
         inherit inputs;
       };
-			modules = [ ./home-manager/home.nix ];
+			modules = [ 
+				./home-manager/home.nix
+				inputs.spicetify-nix.homeManagerModules.default
+			];
 		};
 	};
 }

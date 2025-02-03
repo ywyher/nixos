@@ -31,7 +31,7 @@
         mpv
         ncmpcpp
     	lollypop
-        spotify
+        unzip
 
         polkit
         hyprpolkitagent
