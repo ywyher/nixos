@@ -8,5 +8,6 @@
     ./udiskie.nix
     ./spicetify.nix
     ./ghostty.nix
+    ./vscode.nix
   ];
 }

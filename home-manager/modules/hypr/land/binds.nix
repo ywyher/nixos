@@ -3,7 +3,7 @@
     bind = [
         "$mainMod, Q, exec, $terminal"
         "$mainMod, C, killactive,"
-        "$mainMod, M, exit,"
+        "$mainMod SHIFT, M, exit,"
         "$mainMod, E, exec, $fileManager"
         "$mainMod SHIFT, E, exec, $backupFileManager"
         "$mainMod, R, exec, $menu"
@@ -24,6 +24,7 @@
         # Screenshot a region
         "$mainMod SHIFT, PRINT, exec, hyprshot -m region --clipboard-only"
 
+        "$mainMod, B, exec, bash /etc/nixos/home-manager/modules/hypr/scripts/battery.sh"
 
         # Brightness
         ",f3,exec, bash /etc/nixos/home-manager/modules/hypr/scripts/brightness/up.sh"

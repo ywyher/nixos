@@ -8,8 +8,8 @@
 
         "$mainMod" = "SUPER";
         "$terminal" = "ghostty";
-        "$backupFileManager" = "nautilus";
-        "$fileManager" = "dolphin";
+        "$backupFileManager" = "dolphin";
+        "$fileManager" = "nautilus";
         "$menu" = "rofi -show drun -theme Monokai -icon-theme 'Papirus' -show-icons";
 
         env = [

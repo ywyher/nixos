@@ -5,15 +5,12 @@
         kitty
         lshw
         firefox
-        vscode
         brightnessctl
         rofi-wayland
         rofi-screenshot
         mako
         pavucontrol
-        brave
         anki
-        vesktop
         nautilus
         flameshot
         qimgv
@@ -32,6 +29,19 @@
         ncmpcpp
     	lollypop
         unzip
+    	telegram-desktop
+        google-chrome
+        youtube-music
+        ytmdesktop
+        yt-dlp
+        speedtest-cli	
+        obsidian
+
+
+        (discord.override {
+            # withOpenASAR = true; # can do this here too
+            withVencord = true;
+        })
 
         polkit
         hyprpolkitagent
@@ -47,6 +57,8 @@
         home-manager
 
         nodejs
-        pnpm
+        bun
+	pnpm
+	jdk
     ];
 }
