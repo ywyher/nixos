@@ -1,7 +1,8 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, system, ... }: {
     nixpkgs.config.allowUnfree = true;
-
     home.packages = with pkgs; [
+        inputs.zen-browser.packages."${system}".default # beta
+
         kitty
         lshw
         firefox
@@ -22,7 +23,6 @@
         hunspell
         gamescope
         mangohud
-        dolphin
         btop
         vlc
         mpv
@@ -36,7 +36,8 @@
         yt-dlp
         speedtest-cli	
         obsidian
-
+        gh
+        scrcpy
 
         (discord.override {
             # withOpenASAR = true; # can do this here too
@@ -58,7 +59,7 @@
 
         nodejs
         bun
-	pnpm
-	jdk
+        pnpm
+        jdk
     ];
 }
