@@ -6,6 +6,9 @@
       ./nixos/modules
     ];
 
+	
+  services.logrotate.enable = false;
+
   networking.hostName = "ywyh";
 
   nixpkgs.config.allowUnfree = true;

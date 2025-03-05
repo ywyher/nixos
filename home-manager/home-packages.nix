@@ -22,8 +22,6 @@
         zed-editor
         libreoffice-qt6
         hunspell
-        gamescope
-        mangohud
         btop
         vlc
         mpv
