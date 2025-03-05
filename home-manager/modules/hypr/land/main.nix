@@ -18,6 +18,7 @@
             "NIXOS_OZONE_WL=1"
             "LIBVA_DRIVER_NAME,nvidia"
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
+            "NVD_BACKEND,direct" # Hardware accelerations
         ];
 
         exec-once = [
@@ -30,8 +31,8 @@
         ];
         
         general = {
-            gaps_in = 5;
-            gaps_out = 5;
+            gaps_in = 1;
+            gaps_out = 4;
 
             border_size = 2;
 
@@ -46,20 +47,20 @@
         };
 
         decoration = {
-            rounding = 10;
+            rounding = 8;
 
             active_opacity = "1.0";
             inactive_opacity = "1.0";
 
             shadow = {
-                enabled = true;
+                enabled = false;
                 range = 4;
                 render_power = 3;
                 color = "rgba(1a1a1aee)";
             };
 
             blur = {
-                enabled = true;
+                enabled = false;
                 size = 3;
                 passes = 1;
                 vibrancy = "0.1696";
@@ -67,7 +68,7 @@
         };
 
         animations = {
-            enabled = true;
+            enabled = false;
 
             bezier = [
                 "fastInOut, 0.25, 1, 0.5, 1"
@@ -76,12 +77,12 @@
             ];
 
             animation = [
-                "windows, 1, 5, fastInOut"
-                "windowsOut, 1, 5, easeOut, popin 70%"
-                "border, 1, 8, snappy"
-                "borderangle, 1, 6, easeOut"
-                "fade, 1, 6, easeOut"
-                "workspaces, 1, 4, fastInOut"
+                "windows, 1, 1, fastInOut"
+                "windowsOut, 1, 1, easeOut, popin 70%"
+                "border, 1, 1, snappy"
+                "borderangle, 1, 1, easeOut"
+                "fade, 1, 1, easeOut"
+                "workspaces, 1, 1, fastInOut"
             ];
         };
 
@@ -96,8 +97,9 @@
         };
 
         misc = {
-            force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers
-            disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
+            vfr = true;
+	    force_default_wallpaper = 0; # Set to 0 or 1 to disable the anime mascot wallpapers
+            disable_hyprland_logo = true; # If true disables the random hyprland logo / anime girl background. :(
         };
 
         input = {

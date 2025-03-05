@@ -3,6 +3,7 @@
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default # beta
 
+	sqlitebrowser
         kitty
         lshw
         firefox
@@ -61,5 +62,6 @@
         bun
         pnpm
         jdk
+        glxinfo
     ];
 }
