@@ -1,6 +1,6 @@
 { user, ... }: {
   users = {
-    users.user = {
+    users.ywyh = {
       isNormalUser = true;
       extraGroups = [ "wheel" "networkmanager" "docker" ];
       openssh.authorizedKeys.keys = [

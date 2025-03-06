@@ -16,7 +16,7 @@
 
 	outputs = { nixpkgs, home-manager, spicetify-nix, ... }@inputs: let 
 		system = "x86_64-linux";
-		user = "root";
+		user = "ywyh";
 		stateVersion = "24.11";
 	in {
 		nixosConfigurations.${user} = nixpkgs.lib.nixosSystem {
