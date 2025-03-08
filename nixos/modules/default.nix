@@ -1,6 +1,8 @@
 {
   imports = [
     ./boot.nix
+    ./bluetooth.nix
+    ./sddm.nix
     ./hyprland.nix
     ./net.nix
     ./nix.nix

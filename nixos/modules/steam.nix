@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
 {
-  boot.kernelPackages = pkgs.linuxPackages;
-
   # Enable Steam
   programs = {
     gamescope = {
@@ -15,7 +13,7 @@
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
       localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 
-      # gamescopeSession.enable = true;
+      gamescopeSession.enable = true;
     };
   };
 

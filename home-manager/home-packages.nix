@@ -59,5 +59,6 @@
         libnotify
         lutris
         superTuxKart # free racing 3rd game to test shit
+	gamemode
     ];
 }

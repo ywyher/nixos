@@ -9,14 +9,11 @@
 	
   services.logrotate.enable = false;
 	
-  networking.hostName = "ywyh";
+  networking.hostName = user;
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ home-manager spicetify-cli ];
+  environment.systemPackages = with pkgs; [ home-manager spicetify-cli ghostty ];
 
-  system.stateVersion = "24.11";
-
-  # services.displayManager.sddm.enable = true;
-
+  system.stateVersion = stateVersion;
 }

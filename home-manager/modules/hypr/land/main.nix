@@ -16,10 +16,14 @@
         env = [
             "XCURSOR_SIZE,24"
             "HYPRCURSOR_SIZE,24"
+
             "NIXOS_OZONE_WL=1"
+	    
+	    # Hyprland
             "LIBVA_DRIVER_NAME,nvidia"
             "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-            "NVD_BACKEND,direct" # Hardware accelerations
+         
+	    "NVD_BACKEND,direct" # Hardware accelerations
         ];
 
         exec-once = [
