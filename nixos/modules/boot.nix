@@ -3,7 +3,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.systemd-boot.configurationLimit = 3;
 
-  boot.kernelPackages = pkgs.linuxPackages_zen; 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Nvidia
   boot.initrd.kernelModules = [ "nvidia" ];

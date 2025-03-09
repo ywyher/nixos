@@ -18,6 +18,7 @@
 		system = "x86_64-linux";
 		user = "ywyh";
 		stateVersion = "24.11";
+		uwsm = true; # Whether to use uwsm or no
 	in {
 		nixosConfigurations.${user} = nixpkgs.lib.nixosSystem {
 			inherit system;
@@ -25,6 +26,7 @@
 				inherit inputs;
 				inherit user;
 				inherit stateVersion;
+				inherit uwsm;
 			};
 			modules = [ ./configuration.nix ];
 		};
@@ -36,6 +38,7 @@
 				inherit system;
 				inherit user;
 				inherit stateVersion;
+				inherit uwsm;
 			};
 			modules = [ 
 				./home-manager/home.nix

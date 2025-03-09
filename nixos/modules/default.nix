@@ -6,6 +6,7 @@
     ./hyprland.nix
     ./net.nix
     ./nix.nix
+    # ./digimend.nix
     ./nvidia.nix
     ./timezone.nix
     ./user.nix

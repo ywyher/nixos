@@ -1,4 +1,4 @@
-{ pkgs, inputs, user, stateVersion, ... }:
+{ pkgs, inputs, user, stateVersion, uwsm, ... }:
 {
   imports =
     [ # Include the results of the hardware scan.
@@ -14,6 +14,14 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [ home-manager spicetify-cli ghostty ];
+
+  hardware.opentabletdriver = {
+    enable = true;
+
+    daemon = {
+      enable = true;
+    };
+  };
 
   system.stateVersion = stateVersion;
 }

@@ -4,6 +4,7 @@
         inputs.zen-browser.packages."${system}".default # beta
 
         kitty
+        lxappearance
         lshw
         firefox
         brightnessctl
@@ -39,6 +40,7 @@
         })
 
         polkit
+        usbutils
         hyprpolkitagent
         hyprpicker
         hypridle
@@ -57,8 +59,14 @@
         jdk
         glxinfo
         libnotify
+        heroic
         lutris
         superTuxKart # free racing 3rd game to test shit
-	gamemode
+	    gamemode
+
+        # Wine and related packages
+        winetricks
+        wineWowPackages.stable  # For 64-bit support
+        # wineWowPackages.waylandFull # Expremintal
     ];
 }

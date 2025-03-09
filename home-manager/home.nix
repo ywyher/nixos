@@ -1,4 +1,4 @@
-{ config, pkgs, user, stateVersion, ... }: 
+{ config, pkgs, user, stateVersion, uwsm, ... }: 
 {
 	imports = [
 		./home-packages.nix

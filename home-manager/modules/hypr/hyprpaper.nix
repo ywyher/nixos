@@ -1,5 +1,8 @@
 {
-  services.hyprpaper = {
+  services.hyprpaper = let
+    okarinStare = "/home/ywyh/Pictures/Wallpapers/anime/steins;gate/okarin-stare.png";
+    makimaRyuk = "/home/ywyh/Pictures/Wallpapers/anime/chainsaw/makima-ryuk.png";
+  in {
     enable = true;
 
     settings = {
@@ -7,11 +10,13 @@
       splash = false;
       splash_offset = 2.0;
 
-      preload =
-        [ "/home/ywyh/Pictures/Wallpapers/anime/steins;gate/okarin-stare.png" ];
+      preload = [
+        okarinStare
+        makimaRyuk
+      ];
 
       wallpaper = [
-        ",/home/ywyh/Pictures/Wallpapers/anime/steins;gate/okarin-stare.png"
+        ",${makimaRyuk}"
       ];
     };
   };

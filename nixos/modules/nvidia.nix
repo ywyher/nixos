@@ -29,6 +29,7 @@
   };
 
   hardware.nvidia.prime = {
+    # PRIME Sync and Offload Mode cannot be enabled at the same time.
     # offload = {
     #   enable = true;
     #   enableOffloadCmd = true;

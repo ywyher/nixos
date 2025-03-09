@@ -9,26 +9,13 @@
         "$mainMod" = "SUPER";
         "$terminal" = "ghostty";
         "$backupFileManager" = "dolphin";
-        "$fileManager" = "nautilus";
+        "$fileManager" = "nautilus -w";
         "$menu" = "rofi -show drun -theme Monokai -icon-theme 'Papirus' -show-icons";
         "$dir" = "/home/ywyh/nixos";
 
-        env = [
-            "XCURSOR_SIZE,24"
-            "HYPRCURSOR_SIZE,24"
-
-            "NIXOS_OZONE_WL=1"
-	    
-	    # Hyprland
-            "LIBVA_DRIVER_NAME,nvidia"
-            "__GLX_VENDOR_LIBRARY_NAME,nvidia"
-         
-	    "NVD_BACKEND,direct" # Hardware accelerations
-        ];
-
         exec-once = [
-            "udiskie"
             # "swww-daemon"
+            "udiskie"
             "hyprpaper"
             "hypridle"
             "systemctl --user start hyprpolkitagent"
