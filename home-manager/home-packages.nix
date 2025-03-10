@@ -7,7 +7,6 @@
         lshw
         firefox
         brightnessctl
-        rofi-wayland
         mako
         pavucontrol
         anki

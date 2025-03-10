@@ -15,7 +15,7 @@
         "$terminal" = "ghostty";
         "$backupFileManager" = "dolphin";
         "$fileManager" = "nautilus -w";
-        "$menu" = "rofi -show drun -theme Monokai -icon-theme 'Papirus' -show-icons";
+        "$menu" = "rofi -show drun -theme ~/.config/rofi/spotlight.rasi -icon-theme 'Papirus' -show-icons";
         "$dir" = "/home/ywyh/nixos";
 
         exec-once = [

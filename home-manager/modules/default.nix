@@ -10,5 +10,6 @@
     ./ghostty.nix
     ./vscode.nix
     ./mime.nix
+    ./rofi.nix
   ];
 }
