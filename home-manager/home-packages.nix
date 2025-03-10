@@ -4,7 +4,6 @@
         inputs.zen-browser.packages."${system}".default # beta
 
         kitty
-        lxappearance
         lshw
         firefox
         brightnessctl

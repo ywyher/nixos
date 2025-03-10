@@ -15,9 +15,9 @@
         makimaRyuk
       ];
 
-      wallpaper = [
-        ",${makimaRyuk}"
-      ];
+      # wallpaper = [
+      #   ",${okarinStare}"
+      # ];
     };
   };
 }

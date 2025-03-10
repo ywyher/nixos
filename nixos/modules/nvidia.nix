@@ -28,7 +28,7 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  hardware.nvidia.prime = {
+  # hardware.nvidia.prime = {
     # PRIME Sync and Offload Mode cannot be enabled at the same time.
     # offload = {
     #   enable = true;
@@ -36,9 +36,9 @@
     # };
     # sync.enable = true;
 
-    intelBusId = "PCI:0:2:0";
-    nvidiaBusId = "PCI:1:0:0";
-  };
+    # intelBusId = "PCI:0:2:0";
+    # nvidiaBusId = "PCI:1:0:0";
+  # };
 
   environment.systemPackages = [
     pkgs.nvidia-vaapi-driver

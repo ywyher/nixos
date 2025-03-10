@@ -15,13 +15,5 @@
 
   environment.systemPackages = with pkgs; [ home-manager spicetify-cli ghostty ];
 
-  hardware.opentabletdriver = {
-    enable = true;
-
-    daemon = {
-      enable = true;
-    };
-  };
-
   system.stateVersion = stateVersion;
 }

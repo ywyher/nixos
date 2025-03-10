@@ -2,11 +2,10 @@
   imports = [
     ./boot.nix
     ./bluetooth.nix
-    ./sddm.nix
+    ./greetd.nix
     ./hyprland.nix
     ./net.nix
     ./nix.nix
-    # ./digimend.nix
     ./nvidia.nix
     ./timezone.nix
     ./user.nix
@@ -15,5 +14,7 @@
     ./docker.nix
     ./steam.nix
     ./automount.nix
+    ./plymouth.nix
+    ./env.nix
   ];
 }

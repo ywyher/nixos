@@ -3,6 +3,11 @@
     enable = true;
     systemd.enable = false;
 
+    # set the Hyprland and XDPH packages to null to use the ones from the NixOS module
+    # Avoid conflicts since we have hyprland installed through nixos config and home manager at the same time
+    package = null;
+    portalPackage = null;
+
     settings = {
         monitor = ",1920x1080@60,auto,1";
 

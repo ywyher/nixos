@@ -3,11 +3,12 @@
     ./hypr
     ./bash.nix
     ./git.nix
-    # ./mime.nix -> doesnt work
+    ./theme.nix
     ./mako.nix
     ./udiskie.nix
     ./spicetify.nix
     ./ghostty.nix
     ./vscode.nix
+    ./mime.nix
   ];
 }

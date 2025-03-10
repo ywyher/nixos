@@ -8,8 +8,4 @@
   # Nvidia
   boot.initrd.kernelModules = [ "nvidia" ];
   boot.blacklistedKernelModules = ["nouveau"];
-  
-  # Enable the xpadneo driver
-  boot.extraModulePackages = with config.boot.kernelPackages; [ xpadneo ];
-  boot.kernelModules = [ "hid_xpadneo" ];
 }
