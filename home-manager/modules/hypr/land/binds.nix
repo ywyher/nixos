@@ -14,7 +14,7 @@
         "$mainMod SHIFT, F, fullscreen,1"
 
         "$mainMod CTRL, C, exec, hyprpicker -a"
-        "SUPER, V, exec, cliphist list | rofi -dmenu | cliphist decode | wl-copy"
+        "SUPER, V, exec, cliphist list | rofi -dmenu -theme ~/.config/rofi/spotlight.rasi | cliphist decode | wl-copy"
 
 
         # Screenshot a window

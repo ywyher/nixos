@@ -29,11 +29,11 @@
   qt = {
     enable = true;
     # Using platformTheme.name doesnt work although they say it renamed to that weird
-    platformTheme.name = "gtk";  # Makes Qt apps follow GTK theme
+    # platformTheme.name = "gtk";  # Makes Qt apps follow GTK theme
     
-    # style = {
-    #   package = pkgs.adwaita-qt;  # Alternative: pkgs.breeze
-    #   name = "adwaita-dark";  # Change to "adwaita" for light mode
-    # };
+    style = {
+      package = pkgs.adwaita-qt;  # Alternative: pkgs.breeze
+      name = "adwaita-dark";  # Change to "adwaita" for light mode
+    };
   };
 }

@@ -1,4 +1,5 @@
 {
+  # services.swaync.enable = true; # Check this later
   services.mako = {
     enable = true;
     icons = true;

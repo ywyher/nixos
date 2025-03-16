@@ -13,6 +13,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  services.xserver.desktopManager.runXdgAutostartIfNone = true;
+
   environment.systemPackages = with pkgs; [ home-manager spicetify-cli ghostty ];
 
   system.stateVersion = stateVersion;

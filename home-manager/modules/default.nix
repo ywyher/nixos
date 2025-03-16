@@ -11,5 +11,6 @@
     ./vscode.nix
     ./mime.nix
     ./rofi.nix
+    ./scripts/erp.nix
   ];
 }

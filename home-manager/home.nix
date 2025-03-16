@@ -1,13 +1,20 @@
 { config, pkgs, user, stateVersion, uwsm, ... }: 
 {
-	imports = [
-		./home-packages.nix
-		./modules
-	];
+  imports = [
+    ./home-packages.nix
+    ./modules
+  ]; 
 
-	home = {
-		username = "ywyh";
-		homeDirectory = "/home/ywyh";
-		stateVersion = "24.11";
-	};
+  home = {
+    username = user;
+    homeDirectory = "/home/${user}";
+    stateVersion = "24.11";
+  };
+
+  programs.home-manager.enable = true;
+
+  programs.java = {
+    enable = true;
+    package = pkgs.jdk;
+  };
 }

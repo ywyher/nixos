@@ -1,7 +1,9 @@
-{
+{ user, ... }: {
   services.hyprpaper = let
-    okarinStare = "/home/ywyh/Pictures/Wallpapers/anime/steins;gate/okarin-stare.png";
-    makimaRyuk = "/home/ywyh/Pictures/Wallpapers/anime/chainsaw/makima-ryuk.png";
+    okarinStare = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/okarin-stare.png";
+    makimaRyuk = "/home/${user}/Pictures/Wallpapers/anime/chainsaw/makima-ryuk.png";
+    kuriseNewspaper = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/kurise-newspaper.png";
+    kuriseDeath = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/kurisu-death.png";
   in {
     enable = true;
 
@@ -13,11 +15,13 @@
       preload = [
         okarinStare
         makimaRyuk
+        kuriseDeath
+        kuriseNewspaper
       ];
 
-      # wallpaper = [
-      #   ",${okarinStare}"
-      # ];
+      wallpaper = [
+        ",${kuriseNewspaper}"
+      ];
     };
   };
 }

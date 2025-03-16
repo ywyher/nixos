@@ -5,7 +5,6 @@
 
         kitty
         lshw
-        firefox
         brightnessctl
         mako
         pavucontrol
@@ -16,8 +15,6 @@
         thunderbird
         swww
         zed-editor
-        libreoffice-qt6
-        hunspell
         btop
         vlc
         mpv
@@ -31,6 +28,11 @@
         obsidian
         gh
         scrcpy
+        postman
+        obs-studio
+
+        libreoffice
+        hunspell # spell check for libreoffice
 
         (discord.override {
             # withOpenASAR = true; # can do this here too
@@ -48,14 +50,18 @@
         hyprshot
         cliphist
         wl-clipboard
-
-        home-manager
+        subtitleedit
+        qbittorrent-enhanced
+        ffmpeg
 
         nodejs
         bun
+        python3
         pnpm
-        jdk
-        glxinfo
+        rustc # check rustup later
+        cargo
+    
+	    glxinfo
         libnotify
         heroic
         lutris
@@ -66,5 +72,7 @@
         winetricks
         wineWowPackages.stable  # For 64-bit support
         # wineWowPackages.waylandFull # Expremintal
+
+        osu-lazer-bin
     ];
 }
