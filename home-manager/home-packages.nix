@@ -13,25 +13,25 @@
         qimgv
         papirus-icon-theme
         thunderbird
-        swww
-        zed-editor
         btop
         vlc
         mpv
         ncmpcpp
         unzip
+	unrar
     	telegram-desktop
         google-chrome
         youtube-music
-        ytmdesktop
         speedtest-cli	
         obsidian
-        gh
-        scrcpy
+	scrcpy
         postman
         obs-studio
-
-        libreoffice
+	siyuan
+	goldendict-ng
+	mongodb-compass
+	
+	libreoffice
         hunspell # spell check for libreoffice
 
         (discord.override {
@@ -61,18 +61,16 @@
         rustc # check rustup later
         cargo
     
-	    glxinfo
+    	glxinfo
         libnotify
         heroic
         lutris
         superTuxKart # free racing 3rd game to test shit
-	    gamemode
+	gamemode
 
         # Wine and related packages
         winetricks
         wineWowPackages.stable  # For 64-bit support
         # wineWowPackages.waylandFull # Expremintal
-
-        osu-lazer-bin
     ];
 }

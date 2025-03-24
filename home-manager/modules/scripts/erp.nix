@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, user, lib, pkgs, ... }:
 
 let
   erpScript = ''
@@ -33,8 +33,23 @@ let
     echo "ERP development environment is now ready!"
   '';
 in {
-  home.file."Scripts/erp.sh" = {
+  # Store the script in ~/Scripts/erp.sh
+  home.file."${config.home.homeDirectory}/Scripts/erp.sh" = {
     text = erpScript;
     executable = true;
+  };
+
+  # Create a .desktop file for Rofi and app launchers
+  home.file.".local/share/applications/erp.desktop" = {
+    text = ''
+      [Desktop Entry]
+      Name=Run ERP
+      Comment=Launch ERP development environment
+      Exec=bash ${config.home.homeDirectory}/Scripts/erp.sh
+      Icon=utilities-terminal
+      Terminal=false
+      Type=Application
+      Categories=Development;
+    '';
   };
 }
