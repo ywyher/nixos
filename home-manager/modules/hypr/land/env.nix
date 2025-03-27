@@ -7,6 +7,9 @@
       "__GLX_VENDOR_LIBRARY_NAME${operation}nvidia"
       "NVD_BACKEND${operation}direct"
 
+      # Flatpak
+      "XDG_DATA_DIRS${operation}/var/lib/flatpak/exports/share:$HOME/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+
       # Using it here makes startup duration for electron apps so fucking slow so we set it in nixos config
       # "NIXOS_OZONE_WL${operation}1"
     ];

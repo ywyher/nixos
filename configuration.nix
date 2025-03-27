@@ -15,7 +15,13 @@
 
   services.xserver.desktopManager.runXdgAutostartIfNone = true;
 
-  environment.systemPackages = with pkgs; [ home-manager spicetify-cli ghostty ];
+  environment.systemPackages = with pkgs; [ 
+    home-manager 
+    spicetify-cli 
+    ghostty
+    gnumake 
+    gcc
+  ];
 
   system.stateVersion = stateVersion;
 }

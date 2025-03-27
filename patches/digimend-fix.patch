@@ -1,0 +1,7 @@
+diff --git a/hid-kye.c b/hid-kye.c
+index abc1234..def5678 100644
+--- a/hid-kye.c
++++ b/hid-kye.c
+@@ -790,7 +790,7 @@
+ 
+ static const __u8 *kye_report_fixup(struct hid_device *hdev, __u8 *rdesc, unsigned int *rsize)

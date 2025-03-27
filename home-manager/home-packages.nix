@@ -1,3 +1,4 @@
+
 { pkgs, inputs, system, ... }: {
     nixpkgs.config.allowUnfree = true;
     home.packages = with pkgs; [
@@ -18,20 +19,20 @@
         mpv
         ncmpcpp
         unzip
-	unrar
+	    unrar
     	telegram-desktop
         google-chrome
         youtube-music
         speedtest-cli	
         obsidian
-	scrcpy
+	    scrcpy
         postman
         obs-studio
-	siyuan
-	goldendict-ng
-	mongodb-compass
+        siyuan
+        goldendict-ng
+        mongodb-compass
 	
-	libreoffice
+	    libreoffice
         hunspell # spell check for libreoffice
 
         (discord.override {
@@ -66,11 +67,11 @@
         heroic
         lutris
         superTuxKart # free racing 3rd game to test shit
-	gamemode
+	    gamemode
+        evtest
+        libinput
 
-        # Wine and related packages
+        wineWowPackages.waylandFull
         winetricks
-        wineWowPackages.stable  # For 64-bit support
-        # wineWowPackages.waylandFull # Expremintal
     ];
 }
