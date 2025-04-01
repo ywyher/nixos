@@ -28,7 +28,6 @@
 	    scrcpy
         postman
         obs-studio
-        siyuan
         goldendict-ng
         mongodb-compass
 	
@@ -51,7 +50,6 @@
         hyprshot
         cliphist
         wl-clipboard
-        subtitleedit
         qbittorrent-enhanced
         ffmpeg
 
@@ -66,7 +64,6 @@
         libnotify
         heroic
         lutris
-        superTuxKart # free racing 3rd game to test shit
 	    gamemode
         evtest
         libinput
