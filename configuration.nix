@@ -6,7 +6,6 @@
       ./nixos/modules
     ];
 
-	
   services.logrotate.enable = false;
 	
   networking.hostName = user;
@@ -19,8 +18,6 @@
     home-manager 
     spicetify-cli 
     ghostty
-    gnumake 
-    gcc
   ];
 
   system.stateVersion = stateVersion;

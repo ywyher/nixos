@@ -1,12 +1,13 @@
 {
-  # services.swaync.enable = true; # Check this later
   services.mako = {
     enable = true;
-    icons = true;
-    defaultTimeout = 3000;
-    padding = "10";
-    borderRadius = 6;
-    backgroundColor = "#1e1e2e";  # Modern dark background
-    borderColor = "#89b4fa";      # Subtle blue accent for borders
+    settings = {
+      icons = true;
+      default-timeout = 3000;
+      padding = "10";
+      border-radius = 6;
+      background-color = "#1e1e2e";
+      border-color = "#89b4fa";
+    };
   };
 }

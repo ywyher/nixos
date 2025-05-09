@@ -15,10 +15,8 @@
     ./steam.nix
     ./automount.nix
     ./plymouth.nix
-    ./env.nix
     ./flatpak.nix
     ./virtualisation.nix
-    # Doesnt work with current kernel for whatever
-    # ./digimend.nix
+    ./openvpn.nix
   ];
 }

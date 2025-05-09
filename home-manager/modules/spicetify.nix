@@ -11,6 +11,6 @@
       adblock
     ];
 
-    theme = spicePkgs.themes.hazy;
+    # theme = spicePkgs.themes.hazy;
   };
 }

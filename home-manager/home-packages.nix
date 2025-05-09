@@ -2,8 +2,13 @@
 { pkgs, inputs, system, ... }: {
     nixpkgs.config.allowUnfree = true;
     home.packages = with pkgs; [
-        inputs.zen-browser.packages."${system}".default # beta
+        inputs.zen-browser.packages."${system}".default
 
+        xorg.xeyes
+        biome
+        lunar-client
+        gimp
+        vivaldi
         kitty
         lshw
         brightnessctl
@@ -17,22 +22,21 @@
         btop
         vlc
         mpv
-        ncmpcpp
         unzip
-	    unrar
+        unrar
     	telegram-desktop
-        google-chrome
         youtube-music
         speedtest-cli	
         obsidian
-	    scrcpy
+        scrcpy
         postman
         obs-studio
-        goldendict-ng
         mongodb-compass
-	
-	    libreoffice
+  	gh	
+  	libreoffice
         hunspell # spell check for libreoffice
+	yt-dlp
+	tree
 
         (discord.override {
             # withOpenASAR = true; # can do this here too
@@ -53,18 +57,21 @@
         qbittorrent-enhanced
         ffmpeg
 
-        nodejs
+  	go
+  	nodejs
         bun
         python3
         pnpm
         rustc # check rustup later
         cargo
+        gnumake 
+        gcc
     
     	glxinfo
         libnotify
         heroic
         lutris
-	    gamemode
+        gamemode
         evtest
         libinput
 
