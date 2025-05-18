@@ -17,6 +17,5 @@
     ./plymouth.nix
     ./flatpak.nix
     ./virtualisation.nix
-    ./openvpn.nix
   ];
 }

@@ -4,6 +4,7 @@
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
 
+	google-chrome
         xorg.xeyes
         biome
         lunar-client
@@ -38,10 +39,12 @@
 	yt-dlp
 	tree
 
-        (discord.override {
-            # withOpenASAR = true; # can do this here too
-            withVencord = true;
-        })
+        vesktop
+         (discord.override {
+             # withOpenASAR = true; # can do this here too
+             withVencord = true;
+         })
+
 
         polkit
         usbutils

@@ -5,6 +5,7 @@
     kuriseNewspaper = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/kurise-newspaper.png";
     kuriseDeath = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/kurisu-death.png";
     fiveCmTrainStation = "/home/${user}/Pictures/Wallpapers/anime/5cm-per-second/train-station.jpg";
+    depression = "/home/${user}/Pictures/Wallpapers/anime/unknown/depression.png";
   in {
     enable = true;
 
@@ -19,10 +20,11 @@
         kuriseDeath
         kuriseNewspaper
         fiveCmTrainStation
+        depression
       ];
 
       wallpaper = [
-        ",${fiveCmTrainStation}"
+        ",${depression}"
       ];
     };
   };
