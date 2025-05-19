@@ -3,15 +3,31 @@
     enable = true;
     profiles.default = {
       userSettings = {
+        "chat.commandCenter.enabled" = false;
         "editor.tabSize" = 2;
         "files.autoSave" = "afterDelay";
         "javascript.preferences.importModuleSpecifier" = "non-relative";
         "typescript.preferences.importModuleSpecifier" = "non-relative";
         "workbench.iconTheme" = "vscode-icons";
-        "workbench.statusBar.visible" = false;
-        "chat.commandCenter.enabled" = false;
         "workbench.layoutControl.enabled" = false;
         "workbench.navigationControl.enabled" = false;
+        "workbench.statusBar.visible" = false;
+        "search.exclude" = {
+          "**/node_modules" = true;
+          "**/bower_components" = true;
+          "**/*.code-search" = true;
+          "**/dist" = true;
+          "**/.next" = true;
+          "**/out" = true;
+          "**/build" = true;
+        };
+        "files.exclude" = {
+          "**/node_modules" = true;
+          "**/.git" = true;
+          "**/.DS_Store" = true;
+          "**/.next" = false;
+          "**/dist" = false;
+        };
       };
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix                         # Nix language support

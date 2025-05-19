@@ -20,7 +20,7 @@ let
 
     docker compose -f docker.yaml up -d &
 
-    cd ~/Development/Git/shinra-proxy/ || exit
+    cd ~/Development/Projects/shinra-proxy/ || exit
 
     ghostty -e "bash -c 'cd ~/Development/Projects/shinra-proxy/ && pnpm run dev'" &
 
