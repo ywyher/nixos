@@ -3,15 +3,15 @@
 let
   theme = ''
     /**
-    * @name midnight-custom
-    * @description a darker, customized version of the midnight discord theme with transparency and background image.
-    * @author refact0r (modified)
-    * @version 2.1.1
-    * @invite nz87hXyvcy
-    * @website https://github.com/refact0r/midnight-discord
-    * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
-    * @authorId 508863359777505290
-    * @authorLink https://www.refact0r.dev
+      * @name midnight-custom
+      * @description a darker, customized version of the midnight discord theme with transparency and background image.
+      * @author refact0r (modified)
+      * @version 2.1.1
+      * @invite nz87hXyvcy
+      * @website https://github.com/refact0r/midnight-discord
+      * @source https://github.com/refact0r/midnight-discord/blob/master/themes/midnight.theme.css
+      * @authorId 508863359777505290
+      * @authorLink https://www.refact0r.dev
     */
 
     /* import theme modules */
@@ -63,7 +63,7 @@ let
         --transparency-tweaks: on; /* enable transparency tweaks */
         --remove-bg-layer: off; /* keep the base layer */
         --panel-blur: on; /* enable panel blur */
-        --blur-amount: 10px; /* moderate blur amount */
+        --blur-amount: 6px; /* moderate blur amount */
         --bg-floating: hsla(220, 15%, 10%, 0.85); /* more opaque color for floating panels */
 
         /* chatbar options */
@@ -85,7 +85,7 @@ let
         --text-2: hsl(220, 25%, 65%); /* headings and important text */
         --text-3: hsl(218, 14%, 73%); /* normal text */
         --text-4: hsl(220, 15%, 38%); /* icon buttons and channels */
-        --text-5: hsl(220, 15%, 23%); /* muted channels/chats and timestamps */
+        --text-5: hsl(215, 14%, 66%); /* muted channels/chats and timestamps */
 
         /* background and dark colors - DARKENED with transparency for panels */
         --bg-1: hsla(220, 15%, 18%, 0.9); /* dark buttons when clicked */
@@ -156,7 +156,7 @@ let
         --bg-anime-back: url(https://i.ibb.co/k6qrrZ4n/anime-fandoms-anime-art-6320551.png);
         --bg-frinds: url(https://i.ibb.co/23DYcfhy/friends.jpg);
         --bg-creepy-mita: url(https://i.ibb.co/zTB5NvLM/Creepy-Mita-miside-games-8891863.jpg);
-    }
+      }
   '';
 in {
   home.file."${config.home.homeDirectory}/.config/vesktop/themes/midnight.theme.css" = {
