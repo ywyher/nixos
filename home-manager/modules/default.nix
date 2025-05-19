@@ -13,5 +13,6 @@
     ./rofi.nix
     ./virtualisation.nix
     ./scripts
+    ./themes
   ];
 }
