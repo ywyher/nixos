@@ -16,6 +16,5 @@
     ./automount.nix
     ./plymouth.nix
     ./flatpak.nix
-    ./virtualisation.nix
   ];
 }

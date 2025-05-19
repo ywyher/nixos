@@ -3,8 +3,6 @@
     nixpkgs.config.allowUnfree = true;
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
-
-	google-chrome
         xorg.xeyes
         biome
         lunar-client
@@ -33,18 +31,17 @@
         postman
         obs-studio
         mongodb-compass
-  	gh	
-  	libreoffice
+  	    gh	
+  	    libreoffice
         hunspell # spell check for libreoffice
-	yt-dlp
-	tree
+	    yt-dlp
+	    tree
 
         vesktop
-         (discord.override {
-             # withOpenASAR = true; # can do this here too
-             withVencord = true;
-         })
-
+        # (discord.override {
+        #     # withOpenASAR = true; # can do this here too
+        #     withVencord = true;
+        # })
 
         polkit
         usbutils
@@ -60,8 +57,8 @@
         qbittorrent-enhanced
         ffmpeg
 
-  	go
-  	nodejs
+  	    go
+  	    nodejs
         bun
         python3
         pnpm

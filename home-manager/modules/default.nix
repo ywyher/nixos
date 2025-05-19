@@ -12,6 +12,6 @@
     ./mime.nix
     ./rofi.nix
     ./virtualisation.nix
-    ./scripts/erp.nix
+    ./scripts
   ];
 }
