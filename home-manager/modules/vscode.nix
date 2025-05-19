@@ -3,12 +3,15 @@
     enable = true;
     profiles.default = {
       userSettings = {
+        "editor.tabSize" = 2;
+        "files.autoSave" = "afterDelay";
+        "javascript.preferences.importModuleSpecifier" = "non-relative";
+        "typescript.preferences.importModuleSpecifier" = "non-relative";
         "workbench.iconTheme" = "vscode-icons";
         "workbench.statusBar.visible" = false;
-        "files.autoSave" = "afterDelay";
-        "editor.tabSize" = 2;
-        "typescript.preferences.importModuleSpecifier" = "non-relative";
-        "javascript.preferences.importModuleSpecifier" = "non-relative";
+        "chat.commandCenter.enabled" = false;
+        "workbench.layoutControl.enabled" = false;
+        "workbench.navigationControl.enabled" = false;
       };
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix                         # Nix language support
