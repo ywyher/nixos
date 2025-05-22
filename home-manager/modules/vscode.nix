@@ -28,6 +28,7 @@
           "**/.next" = false;
           "**/dist" = false;
         };
+        "typescript.updateImportsOnFileMove.enabled" = "always";
       };
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix                         # Nix language support

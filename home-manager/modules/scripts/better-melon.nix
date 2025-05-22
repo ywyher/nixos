@@ -28,13 +28,11 @@ let
  
   '';
 in {
-  # Store the script in ~/Scripts/erp.sh
   home.file."${config.home.homeDirectory}/Scripts/better-melon.sh" = {
     text = script;
     executable = true;
   };
 
-  # Create a .desktop file for Rofi and app launchers
   home.file.".local/share/applications/better-melon.desktop" = {
     text = ''
       [Desktop Entry]

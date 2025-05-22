@@ -36,6 +36,7 @@
         hunspell # spell check for libreoffice
 	    yt-dlp
 	    tree
+	inkscape
 
         vesktop
         # (discord.override {
