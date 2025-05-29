@@ -3,6 +3,8 @@
     nixpkgs.config.allowUnfree = true;
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
+
+	    ungoogled-chromium
         xorg.xeyes
         biome
         lunar-client
@@ -58,8 +60,9 @@
         qbittorrent-enhanced
         ffmpeg
 
+	cloc
   	    go
-  	    nodejs
+	    nodejs
         bun
         python3
         pnpm
@@ -68,6 +71,8 @@
         gnumake 
         gcc
     
+        usbutils
+        simple-mtpfs
     	glxinfo
         libnotify
         heroic

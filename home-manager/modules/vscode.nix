@@ -29,6 +29,7 @@
           "**/dist" = false;
         };
         "typescript.updateImportsOnFileMove.enabled" = "always";
+        "editor.largeFileOptimizations" = false;
       };
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix                         # Nix language support

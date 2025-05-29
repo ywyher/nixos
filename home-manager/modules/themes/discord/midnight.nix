@@ -152,10 +152,14 @@ let
         --purple-3: oklch(62% 0.11 310);
         --purple-4: oklch(57% 0.11 310);
         --purple-5: oklch(52% 0.11 310);
-
+        
         --bg-anime-back: url(https://i.ibb.co/k6qrrZ4n/anime-fandoms-anime-art-6320551.png);
         --bg-frinds: url(https://i.ibb.co/23DYcfhy/friends.jpg);
         --bg-creepy-mita: url(https://i.ibb.co/zTB5NvLM/Creepy-Mita-miside-games-8891863.jpg);
+        --bg-asa-overlay: url(https://i.ibb.co/RVx6HM7/asa-overlay.png);
+        --bg-asa-bw: url(https://i.ibb.co/jkkRtrf1/asa-bw.png);
+        --bg-asa-blood: url(https://i.ibb.co/DHs8BKsn/asa-blood.png);
+        --bg-mikasa: url(https://i.ibb.co/f9wV6tw/mikasa.jpg);
       }
   '';
 in {
