@@ -12,11 +12,11 @@ let
 
     ghostty -e "bash -c 'cd ~/Development/Projects/better-melon && pnpm run dev'" &
 
-    cd ~/Development/Projects/better-melon-mapper || exit
+    cd ~/Development/Projects/better-melon-api || exit
 
     code .
 
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-mapper && bun run dev'" &
+    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-api && bun run dev'" &
 
     docker compose -f docker.yaml up -d &
 
@@ -25,7 +25,6 @@ let
     ghostty -e "bash -c 'cd ~/Development/Projects/shinra-proxy/ && pnpm run dev'" &
 
     echo "better-melon development environment is now ready!"
- 
   '';
 in {
   home.file."${config.home.homeDirectory}/Scripts/better-melon.sh" = {

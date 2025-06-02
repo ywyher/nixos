@@ -163,7 +163,7 @@ let
       }
   '';
 in {
-  home.file."${config.home.homeDirectory}/.config/vesktop/themes/midnight.theme.css" = {
+  home.file."${config.home.homeDirectory}/.config/Vencord/themes/midnight.theme.css" = {
     text = theme;
   };
 }

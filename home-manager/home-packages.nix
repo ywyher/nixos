@@ -9,7 +9,6 @@
         biome
         lunar-client
         gimp
-        vivaldi
         kitty
         lshw
         brightnessctl
@@ -40,11 +39,12 @@
 	    tree
 	inkscape
 
-        vesktop
-        # (discord.override {
-        #     # withOpenASAR = true; # can do this here too
-        #     withVencord = true;
-        # })
+        teamspeak6-client
+        # vesktop
+         (discord.override {
+            # withOpenASAR = true; # can do this here too
+            withVencord = true;
+        })
 
         polkit
         usbutils
@@ -60,6 +60,9 @@
         qbittorrent-enhanced
         ffmpeg
 
+	xsel
+    lsof
+    jq
 	cloc
   	    go
 	    nodejs
