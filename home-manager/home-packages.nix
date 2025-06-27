@@ -1,10 +1,12 @@
 
 { pkgs, inputs, system, ... }: {
     nixpkgs.config.allowUnfree = true;
+    
     home.packages = with pkgs; [
         inputs.zen-browser.packages."${system}".default
 
-	    ungoogled-chromium
+	    extundelete
+        ungoogled-chromium
         xorg.xeyes
         biome
         lunar-client
@@ -22,7 +24,8 @@
         btop
         vlc
         mpv
-        unzip
+        zip
+	    unzip
         unrar
     	telegram-desktop
         youtube-music
@@ -37,7 +40,7 @@
         hunspell # spell check for libreoffice
 	    yt-dlp
 	    tree
-	inkscape
+        inkscape
 
         teamspeak6-client
         # vesktop
@@ -55,17 +58,18 @@
         hypridle
         hyprpaper
         hyprshot
-        cliphist
-        wl-clipboard
         qbittorrent-enhanced
         ffmpeg
+        wl-clipboard
+        identity
 
-	xsel
-    lsof
-    jq
-	cloc
+        xsel
+        lsof
+        jq
+        cloc
   	    go
 	    nodejs
+	    yarn
         bun
         python3
         pnpm
@@ -73,10 +77,11 @@
         cargo
         gnumake 
         gcc
-    
+    	redis
+	    redisinsight
+
         usbutils
         simple-mtpfs
-    	glxinfo
         libnotify
         heroic
         lutris

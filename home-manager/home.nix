@@ -3,7 +3,7 @@
   imports = [
     ./home-packages.nix
     ./modules
-  ]; 
+  ];
 
   home = {
     username = user;

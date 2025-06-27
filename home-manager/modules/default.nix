@@ -12,6 +12,7 @@
     ./mime.nix
     ./rofi.nix
     ./virtualisation.nix
+    ./cliphist.nix
     ./scripts
     ./themes
   ];
