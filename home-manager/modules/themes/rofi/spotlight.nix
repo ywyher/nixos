@@ -1,4 +1,4 @@
-{ ... }: {
+{ user, ... }: {
   home.file = {
     "/home/${user}/.config/rofi/spotlight.rasi".text = ''
         /* MACOS SPOTLIGHT LIKE DARK THEME FOR ROFI  */

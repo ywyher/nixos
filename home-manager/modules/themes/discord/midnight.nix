@@ -57,13 +57,13 @@ let
 
         /* background image options */
         --background-image: on; /* enable background image */
-        --background-image-url: var(--bg-creepy-mita); /* url of the background image */
+        --background-image-url: var(--bg-friends); /* url of the background image */
 
         /* transparency/blur options - ENABLED */
         --transparency-tweaks: on; /* enable transparency tweaks */
         --remove-bg-layer: off; /* keep the base layer */
         --panel-blur: on; /* enable panel blur */
-        --blur-amount: 6px; /* moderate blur amount */
+        --blur-amount: 5px; /* moderate blur amount */
         --bg-floating: hsla(220, 15%, 10%, 0.85); /* more opaque color for floating panels */
 
         /* chatbar options */
@@ -154,7 +154,7 @@ let
         --purple-5: oklch(52% 0.11 310);
         
         --bg-anime-back: url(https://i.ibb.co/k6qrrZ4n/anime-fandoms-anime-art-6320551.png);
-        --bg-frinds: url(https://i.ibb.co/23DYcfhy/friends.jpg);
+        --bg-friends: url(https://i.ibb.co/23DYcfhy/friends.jpg);
         --bg-creepy-mita: url(https://i.ibb.co/zTB5NvLM/Creepy-Mita-miside-games-8891863.jpg);
         --bg-asa-overlay: url(https://i.ibb.co/RVx6HM7/asa-overlay.png);
         --bg-asa-bw: url(https://i.ibb.co/jkkRtrf1/asa-bw.png);
