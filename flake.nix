@@ -28,6 +28,7 @@
 	outputs = { nixpkgs, home-manager, ... }@inputs: let 
 		system = "x86_64-linux";
 		user = "ywyh";
+		home = "home";
 		stateVersion = "24.11";
 		uwsm = true; # Whether to use uwsm or no
 	in {
@@ -48,6 +49,7 @@
 				inherit inputs;
 				inherit system;
 				inherit user;
+				inherit home;
 				inherit stateVersion;
 				inherit uwsm;
 			};

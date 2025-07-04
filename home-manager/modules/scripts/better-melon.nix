@@ -6,27 +6,31 @@ let
 
     zen &
 
+    # Dictionary indexer
+    cd ~/Development/Projects/better-melon-dictionary-indexer || exit
+
+    docker compose -f docker.yaml up -d --wait
+
+    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-dictionary-indexer && bun run build'" &
+
+    # API
+    cd ~/Development/Projects/better-melon-api || exit
+
+    docker compose -f docker.yaml up -d --wait
+
+    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-api && bun run dev'" &
+
+    # Proxy
+    ghostty -e "bash -c 'cd ~/Development/Projects/shrina-proxy/ && pnpm run dev'" &
+
+    # Main APP
     cd ~/Development/Projects/better-melon || exit
 
     code .
 
+    docker compose -f docker.yaml up -d --wait
+
     ghostty -e "bash -c 'cd ~/Development/Projects/better-melon && pnpm run dev'" &
-
-    docker compose -f docker.yaml up -d &
-
-    cd ~/Development/Projects/better-melon-api || exit
-
-    code .
-
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-api && bun run dev'" &
-
-    docker compose -f docker.yaml up -d &
-
-    cd ~/Development/Projects/shinra-proxy/ || exit
-
-    ghostty -e "bash -c 'cd ~/Development/Projects/shinra-proxy/ && pnpm run dev'" &
-
-    echo "better-melon development environment is now ready!"
   '';
 in {
   home.file."${config.home.homeDirectory}/Scripts/better-melon.sh" = {

@@ -51,12 +51,10 @@
       if [ -n "$path" ]; then
         mkdir -p "$HOME/.zen/$path"
         cat > "$HOME/.zen/$path/user.js" << 'EOF'
-
-          user_pref("zen.view.experimental-no-window-controls", true);
-          user_pref("zen.glance.enabled", false);
-          user_pref("zen.view.compact.show-sidebar-and-toolbar-on-hover", false);
-          
-        EOF
+user_pref("zen.view.experimental-no-window-controls", true);
+user_pref("zen.glance.enabled", false);
+user_pref("zen.view.compact.show-sidebar-and-toolbar-on-hover", false);
+EOF
       fi
     fi
   '';
