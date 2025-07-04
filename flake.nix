@@ -19,9 +19,13 @@
 			# to have it up-to-date or simply don't specify the nixpkgs input  
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
+
+		nixcord = {
+			url = "github:kaylorben/nixcord";
+		};
 	};
 
-	outputs = { nixpkgs, home-manager, spicetify-nix, ... }@inputs: let 
+	outputs = { nixpkgs, home-manager, ... }@inputs: let 
 		system = "x86_64-linux";
 		user = "ywyh";
 		stateVersion = "24.11";
@@ -49,7 +53,9 @@
 			};
 			modules = [ 
 				./home-manager/home.nix
-				inputs.spicetify-nix.homeManagerModules.default
+				inputs.nixcord.homeModules.nixcord
+        inputs.spicetify-nix.homeManagerModules.default
+				inputs.zen-browser.homeModules.default
 			];
 		};
 	};

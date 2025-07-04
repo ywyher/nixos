@@ -3,8 +3,6 @@
     nixpkgs.config.allowUnfree = true;
     
     home.packages = with pkgs; [
-        inputs.zen-browser.packages."${system}".default
-
 	    extundelete
         ungoogled-chromium
         xorg.xeyes
@@ -41,13 +39,6 @@
 	    yt-dlp
 	    tree
         inkscape
-
-        teamspeak6-client
-        # vesktop
-         (discord.override {
-            # withOpenASAR = true; # can do this here too
-            withVencord = true;
-        })
 
         polkit
         usbutils

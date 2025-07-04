@@ -13,6 +13,8 @@
     ./rofi.nix
     ./virtualisation.nix
     ./cliphist.nix
+    ./nixcord.nix
+    ./zen-browser.nix
     ./scripts
     ./themes
   ];
