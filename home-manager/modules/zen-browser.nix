@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, lib, user, ... }: {
   programs.zen-browser = {
     enable = true;
     nativeMessagingHosts = [pkgs.firefoxpwa];
@@ -42,11 +42,22 @@
           installation_mode = "force_installed";
         };
       };
-      Preferences = {
-        "zen.view.experimental-no-window-controls" = true;
-        "zen.glance.enabled" = false;
-        "zen.view.compact.show-sidebar-and-toolbar-on-hover" = false;
-      };
     };
   };
+
+  home.activation.zenUserJs = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    if [ -f "/home/${user}/.zen/profiles.ini" ]; then
+      path=$(grep "Path=" "/home/${user}/.zen/profiles.ini" | head -1 | cut -d= -f2)
+      if [ -n "$path" ]; then
+        mkdir -p "$HOME/.zen/$path"
+        cat > "$HOME/.zen/$path/user.js" << 'EOF'
+
+          user_pref("zen.view.experimental-no-window-controls", true);
+          user_pref("zen.glance.enabled", false);
+          user_pref("zen.view.compact.show-sidebar-and-toolbar-on-hover", false);
+          
+        EOF
+      fi
+    fi
+  '';
 }
