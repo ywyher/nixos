@@ -12,6 +12,7 @@
         "workbench.layoutControl.enabled" = false;
         "workbench.navigationControl.enabled" = false;
         "workbench.statusBar.visible" = false;
+        "window.menuBarVisibility" = "compact";
         "search.exclude" = {
           "**/node_modules" = true;
           "**/bower_components" = true;
@@ -34,11 +35,16 @@
       extensions = with pkgs.vscode-extensions; [
         bbenoist.nix                         # Nix language support
         vscode-icons-team.vscode-icons       # VS Code Icons
-        # hedin.headwind                       # Headwind (Tailwind class sorting)
-        # cardinal90.multi-cursor-case-preserve # Multiple cursor case preserve
         bradlc.vscode-tailwindcss            # Tailwind CSS IntelliSense
         formulahendry.auto-rename-tag        # Auto Rename Tag
         ms-azuretools.vscode-docker          # Docker extension
+      ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        {
+          name = "multi-cursor-case-preserve";
+          publisher = "cardinal90";
+          version = "1.0.5";
+          sha256 = "sha256-eJafjYDydD8DW83VLH9MPFeDENXBx3el7XvjZqu88Jw=";
+        }
       ];
     };
   };
