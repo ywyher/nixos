@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Close any previous notification with the same ID
+makoctl dismiss -a
+
 # Get battery percentage from sysfs or upower
 if command -v upower &>/dev/null; then
     BATTERY_INFO=$(upower -i $(upower -e | grep 'battery') | grep -E "percentage" | awk '{print $2}')

@@ -12,6 +12,8 @@ let
 
     ghostty -e "bash -c 'cd ~/Development/Projects/better-melon && pnpm run dev'" &
 
+    docker compose -f docker.yaml up -d &
+
     cd ~/Development/Projects/better-melon-api || exit
 
     code .
