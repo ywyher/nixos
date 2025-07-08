@@ -41,6 +41,16 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/videospeed/latest.xpi";
           installation_mode = "force_installed";
         };
+        # Allow right click
+        "{278b0ae0-da9d-4cc6-be81-5aa7f3202672}" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/re-enable-right-click/latest.xpi";
+          installation_mode = "force_installed";
+        };
+        # Yomitan
+        "{6b733b82-9261-47ee-a595-2dda294a4d08}" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/yomitan/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
     };
   };

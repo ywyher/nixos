@@ -38,6 +38,7 @@
         bradlc.vscode-tailwindcss            # Tailwind CSS IntelliSense
         formulahendry.auto-rename-tag        # Auto Rename Tag
         ms-azuretools.vscode-docker          # Docker extension
+        ms-python.python
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
           name = "multi-cursor-case-preserve";

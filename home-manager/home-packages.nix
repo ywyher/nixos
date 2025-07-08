@@ -3,6 +3,9 @@
     nixpkgs.config.allowUnfree = true;
     
     home.packages = with pkgs; [
+
+        google-chrome
+        ungoogled-chromium
 	    extundelete
         xorg.xeyes
         biome
