@@ -13,7 +13,7 @@ let
     docker compose -f docker.yaml up -d --wait
     notify-send "Better melon dictionary indexer services is up and running!"
 
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-dictionary-indexer && bun run build'" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon-dictionary-indexer\" && bun run build" &
 
     # API
     cd ~/Development/Projects/better-melon-api || exit
@@ -22,10 +22,10 @@ let
     docker compose -f docker.yaml up -d --wait
     notify-send "Better melon API services is up and running!"
 
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon-api && bun run dev'" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon-api\" && bun run dev" &
 
     # Proxy
-    ghostty -e "bash -c 'cd ~/Development/Projects/shrina-proxy/ && pnpm run dev'" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/shrina-proxy\" && pnpm run dev" &
 
     # Main APP
     cd ~/Development/Projects/better-melon || exit
@@ -34,8 +34,8 @@ let
     docker compose -f docker.yaml up -d --wait
     notify-send "Better melon services is up and running!"
 
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon && pnpm run dev'" &
-    ghostty -e "bash -c 'cd ~/Development/Projects/better-melon && pnpm studio'" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon\" && pnpm run dev" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon\" && pnpm studio" &
 
     code .
   '';

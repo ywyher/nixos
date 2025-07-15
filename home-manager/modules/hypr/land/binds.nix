@@ -5,7 +5,6 @@
         "$mainMod, C, killactive,"
         "$mainMod SHIFT, M, exit,"
         "$mainMod, E, exec, $fileManager"
-        "$mainMod SHIFT, E, exec, $backupFileManager"
         "$mainMod, R, exec, $menu"
         "$mainMod, P, pseudo," # dwindle
         "$mainMod, J, togglesplit," # dwindle

@@ -7,7 +7,8 @@
     ./mako.nix
     ./udiskie.nix
     ./spicetify.nix
-    ./ghostty.nix
+    ./kitty.nix
+    # ./ghostty.nix
     ./vscode.nix
     ./mime.nix
     ./rofi.nix

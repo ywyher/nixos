@@ -12,8 +12,7 @@
         monitor = ",1920x1080@60,auto,1";
 
         "$mainMod" = "SUPER";
-        "$terminal" = "ghostty";
-        "$backupFileManager" = "dolphin";
+        "$terminal" = "kitty";
         "$fileManager" = "nautilus -w";
         "$menu" = "rofi -show drun -theme ~/.config/rofi/spotlight.rasi -icon-theme 'Papirus' -show-icons";
         "$dir" = "/home/ywyh/nixos";

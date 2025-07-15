@@ -1,17 +1,16 @@
-
 { pkgs, inputs, system, ... }: {
     nixpkgs.config.allowUnfree = true;
     
     home.packages = with pkgs; [
-
+        meilisearch
+        
         google-chrome
         ungoogled-chromium
-	    extundelete
+        extundelete
         xorg.xeyes
         biome
         lunar-client
         gimp
-        kitty
         lshw
         brightnessctl
         mako
@@ -25,9 +24,9 @@
         vlc
         mpv
         zip
-	    unzip
+        unzip
         unrar
-    	telegram-desktop
+        telegram-desktop
         youtube-music
         speedtest-cli	
         obsidian
@@ -35,11 +34,11 @@
         postman
         obs-studio
         mongodb-compass
-  	    gh	
-  	    libreoffice
+        gh	
+        libreoffice
         hunspell # spell check for libreoffice
-	    yt-dlp
-	    tree
+        yt-dlp
+        tree
         inkscape
 
         polkit
@@ -60,9 +59,9 @@
         lsof
         jq
         cloc
-  	    go
-	    nodejs
-	    yarn
+        go
+        nodejs
+        yarn
         bun
         python3
         pnpm
@@ -70,8 +69,8 @@
         cargo
         gnumake 
         gcc
-    	redis
-	    redisinsight
+        redis
+        redisinsight
 
         usbutils
         simple-mtpfs
