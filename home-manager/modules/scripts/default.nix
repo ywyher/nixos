@@ -1,6 +1,6 @@
 {
   imports = [
-    ./erp.nix
+    ./perfect-health.nix
     ./better-melon.nix
   ];
 }

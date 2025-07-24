@@ -4,6 +4,9 @@
     home.packages = with pkgs; [
         meilisearch
         
+        mdbtools
+        android-tools
+        efibootmgr
         google-chrome
         ungoogled-chromium
         extundelete
