@@ -6,7 +6,8 @@
     kuriseDeath = "/home/${user}/Pictures/Wallpapers/anime/steins;gate/vn/kurisu-death.png";
     fiveCmTrainStation = "/home/${user}/Pictures/Wallpapers/anime/5cm-per-second/train-station.jpg";
     depression = "/home/${user}/Pictures/Wallpapers/anime/unknown/depression.png";
-    street = "/home/${user}/Pictures/Wallpapers/anime/unknown/depression.png";
+    retroSpace = "/home/${user}/Pictures/Wallpapers/retro-space.png";
+    fireSun = "/home/${user}/Pictures/Wallpapers/fire-sun.png";
   in {
     enable = true;
 
@@ -22,10 +23,11 @@
         kuriseNewspaper
         fiveCmTrainStation
         depression
+        retroSpace
       ];
 
       wallpaper = [
-        ",${depression}"
+        ",${retroSpace}"
       ];
     };
   };

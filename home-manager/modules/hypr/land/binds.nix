@@ -29,7 +29,6 @@
         ",f3,exec, bash $dir/home-manager/modules/hypr/scripts/brightness/up.sh"
         # ",f2,exec, bash $dir/home-manager/modules/hypr/scripts/brightness/down.sh"
 
-
         # Volume
         ", f8, exec, bash $dir/home-manager/modules/hypr/scripts/volume/up.sh"
         ", f7, exec, bash $dir/home-manager/modules/hypr/scripts/volume/down.sh"

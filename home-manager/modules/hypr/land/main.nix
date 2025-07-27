@@ -14,7 +14,7 @@
         "$mainMod" = "SUPER";
         "$terminal" = "kitty";
         "$fileManager" = "nautilus -w";
-        "$menu" = "rofi -show drun -theme ~/.config/rofi/spotlight.rasi -icon-theme 'Papirus' -show-icons";
+        "$menu" = "rofi -show drun -theme ~/.config/rofi/spotlight.rasi -icon-theme 'Tela' -show-icons";
         "$dir" = "/home/ywyh/nixos";
 
         exec-once = [

@@ -4,10 +4,10 @@
     home.packages = with pkgs; [
         meilisearch
         
+    	typioca
         mdbtools
         android-tools
         efibootmgr
-        google-chrome
         ungoogled-chromium
         extundelete
         xorg.xeyes
@@ -21,7 +21,7 @@
         anki
         nautilus
         qimgv
-        papirus-icon-theme
+        # papirus-icon-theme
         thunderbird
         btop
         vlc
@@ -58,6 +58,7 @@
         wl-clipboard
         identity
 
+        turbo
         xsel
         lsof
         jq
