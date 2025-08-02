@@ -2,8 +2,12 @@
     nixpkgs.config.allowUnfree = true;
     
     home.packages = with pkgs; [
+        inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
+
         meilisearch
-        
+        piper
+        waydroid
+        google-chrome        
     	typioca
         mdbtools
         android-tools
@@ -21,7 +25,6 @@
         anki
         nautilus
         qimgv
-        # papirus-icon-theme
         thunderbird
         btop
         vlc
@@ -38,8 +41,10 @@
         obs-studio
         mongodb-compass
         gh	
+        
         libreoffice
         hunspell # spell check for libreoffice
+        
         yt-dlp
         tree
         inkscape

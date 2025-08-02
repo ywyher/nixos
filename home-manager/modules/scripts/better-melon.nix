@@ -6,36 +6,13 @@ let
 
     zen &
 
-    # Dictionary indexer
-    cd ~/Development/Projects/better-melon-dictionary-indexer || exit
-
-    notify-send "Starting Better melon dictionary indexer services through docker"
-    docker compose -f docker.yaml up -d --wait
-    notify-send "Better melon dictionary indexer services is up and running!"
-
-    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon-dictionary-indexer\" && bun run build" &
-
-    # API
-    cd ~/Development/Projects/better-melon-api || exit
-
-    notify-send "Starting Better melon API services through docker"
-    docker compose -f docker.yaml up -d --wait
-    notify-send "Better melon API services is up and running!"
-
-    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon-api\" && bun run dev" &
-
-    # Proxy
-    kitty -e bash -c "cd \"$HOME/Development/Projects/shrina-proxy\" && pnpm run dev" &
-
-    # Main APP
     cd ~/Development/Projects/better-melon || exit
 
     notify-send "Starting Better melon services through docker"
     docker compose -f docker.yaml up -d --wait
     notify-send "Better melon services is up and running!"
 
-    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon\" && pnpm run dev" &
-    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon\" && pnpm studio" &
+    kitty -e bash -c "cd \"$HOME/Development/Projects/better-melon\" && turbo run dev --filter=web --filter=api --filter=shinra" &
 
     code .
   '';

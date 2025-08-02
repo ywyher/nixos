@@ -25,6 +25,10 @@
 		nixcord = {
 			url = "github:kaylorben/nixcord";
 		};
+
+    nix-gaming = {
+			url = "github:fufexan/nix-gaming";
+		};
 	};
 
 	outputs = { nixpkgs, home-manager, ... }@inputs: let 
@@ -60,7 +64,7 @@
 			modules = [ 
 				./home-manager/home.nix
 				inputs.nixcord.homeModules.nixcord
-        inputs.spicetify-nix.homeManagerModules.default
+				inputs.spicetify-nix.homeManagerModules.default
 				inputs.zen-browser.homeModules.default
 			];
 		};

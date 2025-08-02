@@ -4,7 +4,8 @@
   boot.loader.systemd-boot.configurationLimit = 3;
   boot.kernelPackages = pkgs.linuxPackages_zen;
 
-  # Nvidia
-  boot.initrd.kernelModules = [ "nvidia" ];
+  boot.initrd.kernelModules = [ 
+    "nvidia"
+  ];
   boot.blacklistedKernelModules = ["nouveau"];
 }

@@ -16,6 +16,7 @@
     ./automount.nix
     ./plymouth.nix
     ./flatpak.nix
+    ./ratbagd.nix
     # ./meilisearch.nix
   ];
 }
