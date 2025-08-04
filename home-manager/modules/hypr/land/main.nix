@@ -114,12 +114,6 @@
         gestures = {
             workspace_swipe = false;
         };
-
-        device = {
-            name = "epic-mouse-v1";
-            sensitivity = -0.5;
-        };
-
         
         windowrulev2 = [
             "suppressevent maximize, class:.*"

@@ -8,7 +8,7 @@
             owner = "spicetify";
             repo = "cli";
             rev = "main";
-            hash = "sha256-JQePmLk1uYLdj1j2kIPzvEPQbPNpvav/tpR1v+YF4Mc=";
+            hash = "sha256-9rX3jifEmGL1ewiTu3DoUYI/u8Osl1wVSo+9yWH+J8I=";
           } + "/Extensions";
 
           name = "loopyLoop.js";
@@ -18,7 +18,7 @@
             owner = "spicetify";
             repo = "cli";
             rev = "main";
-            hash = "sha256-JQePmLk1uYLdj1j2kIPzvEPQbPNpvav/tpR1v+YF4Mc=";
+            hash = "sha256-9rX3jifEmGL1ewiTu3DoUYI/u8Osl1wVSo+9yWH+J8I=";
           } + "/Extensions";
 
           name = "keyboardShortcut.js";
@@ -41,7 +41,7 @@
         owner = "spicetify";
         repo = "spicetify-themes";
         rev = "master";
-        hash = "sha256-d6xxydORLenqRw6PLW8M9FnLHYj7k0ALUsDlm6jEW1M=";
+        hash = "sha256-2r4AbMber9VqQECKiYI/fKw+mJPhM6WmLVs0QscIaVs=";
       } + "/text";
     };
   };

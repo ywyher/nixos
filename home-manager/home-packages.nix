@@ -4,6 +4,8 @@
     home.packages = with pkgs; [
         inputs.nix-gaming.packages.${pkgs.system}.osu-lazer-bin
 
+        qutebrowser
+        nyxt
         meilisearch
         piper
         waydroid

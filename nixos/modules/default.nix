@@ -1,7 +1,8 @@
 {
   imports = [
-    ./boot.nix
     ./bluetooth.nix
+    # ./meilisearch.nix
+    ./boot.nix
     ./greetd.nix
     ./hyprland.nix
     ./net.nix
@@ -17,6 +18,8 @@
     ./plymouth.nix
     ./flatpak.nix
     ./ratbagd.nix
-    # ./meilisearch.nix
+    ./power.nix
+    ./tlp.nix
+    ./upower.nix
   ];
 }
